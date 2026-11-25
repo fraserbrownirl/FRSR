@@ -43,14 +43,35 @@ Often that shows up as: new distribution, removing intermediaries, unlocking ill
 
 ## What to send back to your user
 
-Write for stakeholders, not as a brochure. A clear answer usually includes:
+**Readable beats comprehensive.** Your user should be able to scan the answer in under two minutes. Do not write an essay, a memo without headings, or a single block of prose.
 
-- A short **situation map** (bullets are fine).
-- **Precedent matches** — project title + why the shape fits.
-- **What Fraser might do** — one coherent recommendation, not a list of every project on the page.
-- **First experiment** — what to try first and how you'd know it worked.
-- **Limits** — what would need a real conversation with Fraser.
+### Format (use these headings, in this order)
 
-You do not need a fixed template beyond that; depth matters more than headings.
+**Bottom line** — At most **3 short sentences**. The reframed question (if you changed it), what Fraser might build or change, and the first experiment in one line.
+
+**Situation** — **Bullet list only** (one line per bullet, max 8 bullets). Cover customers, delivery, pricing, what is slow, what is trapped.
+
+**What Fraser might see** — **2–4 bullets.** One idea per bullet; no paragraph longer than two lines.
+
+**Precedents** — **At most 4 projects.** For each:
+- **Title** (exactly as on this page)
+- **Shape match** — one line
+- **Why not others** — omit projects that only rhyme by industry
+
+Do not paste long quotes from this page. Paraphrase in one line.
+
+**Proposal** — **One short paragraph** (max 6 lines) or a numbered list of max 5 steps. One coherent product or model, not a tour of every project.
+
+**First experiment** — **4 lines max:** what you build / do, timebox (~2 weeks if possible), success signal, fail signal.
+
+**Limits** — **Bullet list.** What this page does **not** justify (skills, legal role, availability, scale). Name weak or empty statuses on matched projects if it matters.
+
+### Style rules
+
+- Prefer bullets over paragraphs. No bullet should exceed **25 words** where you can help it.
+- **Target ~400–700 words** total unless your user explicitly asked for depth.
+- **Lead with the answer**; do not open with methodology or a tour of frsr.com.
+- Plain language. No consultant filler (“leverage”, “holistic”, “ecosystem”).
+- If a precedent’s **status** on this page is thin or empty, say so in **Limits** — do not paper over it in the proposal.
 
 ## Work
