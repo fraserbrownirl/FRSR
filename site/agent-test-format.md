@@ -5,40 +5,36 @@ Use when scoring sample users against frsr.com. The **live brief** is on the hom
 Thin runner prompt:
 
 ```markdown
-Fetch https://frsr.com/ and read everything below the hero. Follow Method and reply with the headings under "Your answer" on that page exactly. Do not invent facts about Fraser.
+Fetch https://frsr.com/ and read everything below the hero. Follow Method and reply with the headings under "Your answer" on that page exactly. Do not invent facts about Fraser. Do not output an insight-scan table or a Limits section.
 
 [Paste sample user profile]
 ```
 
-Structured checklist (maps to homepage sections):
+Structured checklist (for scoring only — not extra sections in the user-facing reply):
 
 ### B. Hypothesised structural problems
 
-2–3, each marked `[known]` or `[inferred]`, at least one the user has not named. End with: *Correct me if any of these are wrong.*
+2–3, `[known]` / `[inferred]`, one line each. End with correction invite.
 
-### C. Insight scan
+### C. (Internal) Insight scan
 
-Table: **every** project | insight (one line) | which problem or `none`.
+Evaluator only: did the agent read beyond Amplify/Bursar/reintro? No table required in the published answer.
 
 ### D. What Fraser did → what he would do here
 
-Per problem (max 3), per strongest insight (max 2): project, what he did, what he would do here `[inference]`, reasoning, lesson (one transferable sentence).
+Per match: **Lesson** first (bold), then insight / did / inference / reasoning bullets. Max 3 problems × 2 projects.
 
 ### E. Combined read
 
-How insights compose.
+≤4 lines.
 
 ### F. First experiment
 
-Hypothesis, build/test, success signal, fail signal, ~two-week scope.
+Hypothesis, do, success, fail.
 
-### G. Limits and source check
+### G. Ask Fraser today
 
-What the page does not support; which URL was read; whether project text was present.
+One question.
 
-### H. Ask Fraser today
-
-One forwardable question.
-
-**Pass signals:** full insight table; at least one `[inference]` problem; lessons present; did vs would separated; one Fraser question.
-**Fail signals:** only Amplify/Bursar cited; essay with no table; no `[inference]` labels; invented capabilities.
+**Pass signals:** Lesson-first blocks; full-page read visible in match choices; `[inference]` labels; one Fraser question; no scan table; no Limits nanny section.
+**Fail signals:** Essay walls; 23-row table; limits lecture; only famous projects used.
