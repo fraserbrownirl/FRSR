@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FRSR experience console</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="top">
+      <h1>FRSR experience console</h1>
+      <p class="lede">
+        Narrative fields per page — what the frsr.com agent reads. Use the sidebar and
+        <strong>Previous / Next</strong>; optional lifecycle and links on the left.
+      </p>
+      <div class="toolbar">
+        <button type="button" id="regen" class="secondary">Rebuild below-banner.md</button>
+        <button type="button" id="save" class="primary" disabled>Save page</button>
+      </div>
+      <p id="status" class="status" aria-live="polite"></p>
+    </header>
+
+    <div class="layout">
+      <aside class="sidebar">
+        <label class="field">
+          <span>Page</span>
+          <select id="pageSelect"></select>
+        </label>
+        <label class="field">
+          <span>Lifecycle</span>
+          <select id="pageStatus">
+            <option value="completed">Completed</option>
+            <option value="live">Live</option>
+            <option value="building">Building</option>
+          </select>
+        </label>
+        <label class="field">
+          <span>Website</span>
+          <input id="pageWebsite" type="url" placeholder="https://…" autocomplete="off" />
+        </label>
+        <label class="field">
+          <span>GitHub</span>
+          <input id="pageGithub" type="url" placeholder="https://github.com/…" autocomplete="off" />
+        </label>
+        <p class="nav-heading">Fields</p>
+        <ul id="fieldNav" class="field-nav"></ul>
+        <p class="progress" id="progress"></p>
+      </aside>
+
+      <main class="editor">
+        <nav class="step-nav">
+          <button type="button" id="prev" class="secondary">Previous</button>
+          <span id="stepLabel"></span>
+          <button type="button" id="next" class="secondary">Next</button>
+        </nav>
+        <div id="fieldHost"></div>
+      </main>
+    </div>
+
+    <script src="app.js?v=simple-five"></script>
+  </body>
+</html>

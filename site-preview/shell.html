@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>frsr.com preview (local)</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="hero-bar">
+    <strong>Local preview.</strong>
+    The boat + socials hero is served from
+    <a href="{{LIVE_URL}}" target="_blank" rel="noopener">frsr.com</a>
+    (not in GitHub).
+    Everything below is from this repo:
+    <code>site/below-banner.md</code>.
+  </div>
+  <div class="hero-frame-wrap" id="hero-wrap">
+    <span class="preview-tag">Production hero</span>
+    <iframe
+      id="hero-frame"
+      src="{{LIVE_URL}}"
+      title="frsr.com hero"
+      loading="eager"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+    <div class="hero-fallback" id="hero-fallback">
+      <p>If the hero did not load (site may block embedding), open the live page:</p>
+      <p><a href="{{LIVE_URL}}" target="_blank" rel="noopener">{{LIVE_URL}}</a></p>
+    </div>
+  </div>
+  <main class="dump" id="below-banner">
+    {{BODY}}
+  </main>
+  <script>
+    (function () {
+      var frame = document.getElementById("hero-frame");
+      var fallback = document.getElementById("hero-fallback");
+      window.setTimeout(function () {
+        try {
+          var doc = frame.contentDocument;
+          if (!doc || !doc.body || !doc.body.innerHTML.trim()) {
+            frame.style.display = "none";
+            fallback.style.display = "block";
+          }
+        } catch (e) {
+          frame.style.display = "none";
+          fallback.style.display = "block";
+        }
+      }, 2500);
+    })();
+  </script>
+</body>
+</html>
