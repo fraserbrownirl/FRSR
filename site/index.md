@@ -14,4 +14,6 @@ python3 scripts/generate-career-site.py
 python3 scripts/frsr-site-preview.py   # http://127.0.0.1:8767/
 ```
 
-**GitHub:** career text is in `fraserbrownirl/FRSR`. The live hero on frsr.com is **not** in a repo we control here; preview loads it from production in an iframe, then shows `below-banner.md` below.
+**GitHub:** career text is in `fraserbrownirl/FRSR`. Hero: `entropy-studio-vault`.
+
+Agent reply: [preamble.md](preamble.md). Test harness: [agent-test-format.md](agent-test-format.md).
